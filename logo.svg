@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="300" height="300" viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .logo-text {
+        font-family: 'Dancing Script', cursive;
+        font-weight: 600;
+      }
+      .logo-subtext {
+        font-family: 'Poppins', sans-serif;
+        font-weight: 300;
+        letter-spacing: 3px;
+      }
+    </style>
+  </defs>
+
+
+  <!-- Cake icon -->
+  <g transform="translate(150, 55)">
+    <!-- Top tier -->
+    <ellipse cx="0" cy="-5" rx="35" ry="8" fill="#f9d5e5"/>
+    <rect x="-35" y="-5" width="70" height="25" fill="#f9d5e5"/>
+    <ellipse cx="0" cy="20" rx="35" ry="8" fill="#e8b4c5"/>
+
+    <!-- Middle tier -->
+    <ellipse cx="0" cy="20" rx="45" ry="10" fill="#ffd4e5"/>
+    <rect x="-45" y="20" width="90" height="30" fill="#ffd4e5"/>
+    <ellipse cx="0" cy="50" rx="45" ry="10" fill="#f4c2d4"/>
+
+    <!-- Bottom tier -->
+    <ellipse cx="0" cy="50" rx="55" ry="12" fill="#ffe4f0"/>
+    <rect x="-55" y="50" width="110" height="35" fill="#ffe4f0"/>
+    <ellipse cx="0" cy="85" rx="55" ry="12" fill="#fad1e0"/>
+
+    <!-- Decorative elements -->
+    <!-- Frosting drips -->
+    <path d="M -30 20 Q -30 25, -25 25 Q -25 20, -25 20" fill="#e8b4c5"/>
+    <path d="M 0 20 Q 0 25, 5 25 Q 5 20, 5 20" fill="#e8b4c5"/>
+    <path d="M 25 20 Q 25 25, 30 25 Q 30 20, 30 20" fill="#e8b4c5"/>
+
+    <path d="M -35 50 Q -35 55, -30 55 Q -30 50, -30 50" fill="#f4c2d4"/>
+    <path d="M 0 50 Q 0 55, 5 55 Q 5 50, 5 50" fill="#f4c2d4"/>
+    <path d="M 30 50 Q 30 55, 35 55 Q 35 50, 35 50" fill="#f4c2d4"/>
+
+    <!-- Cherry on top -->
+    <circle cx="0" cy="-12" r="4" fill="#d4145a"/>
+    <path d="M 0 -12 Q -3 -18, -5 -22" stroke="#8b0a3d" stroke-width="1.5" fill="none"/>
+    <ellipse cx="-6" cy="-23" rx="2" ry="3" fill="#4a7c59"/>
+  </g>
+
+  <!-- Main text: Flora's Cakes -->
+  <text x="150" y="185" text-anchor="middle" class="logo-text" font-size="44" fill="#d4145a">
+    Flora's Cakes
+  </text>
+
+  <!-- Subtitle -->
+  <text x="150" y="210" text-anchor="middle" class="logo-subtext" font-size="11" fill="#8b7355">
+    HOMEMADE WITH LOVE
+  </text>
+
+  <!-- Decorative flourishes -->
+  <path d="M 70 192 Q 65 192, 65 197" stroke="#d4145a" stroke-width="1" fill="none" opacity="0.6"/>
+  <path d="M 80 194 Q 75 194, 75 199" stroke="#d4145a" stroke-width="1" fill="none" opacity="0.6"/>
+
+  <path d="M 230 192 Q 235 192, 235 197" stroke="#d4145a" stroke-width="1" fill="none" opacity="0.6"/>
+  <path d="M 220 194 Q 225 194, 225 199" stroke="#d4145a" stroke-width="1" fill="none" opacity="0.6"/>
+
+  <!-- Small hearts decoration -->
+  <path d="M 60 180 L 62 182 L 64 180 Q 64 178, 62 178 Q 60 178, 60 180 Z" fill="#f9d5e5"/>
+  <path d="M 235 180 L 237 182 L 239 180 Q 239 178, 237 178 Q 235 178, 235 180 Z" fill="#f9d5e5"/>
+</svg>

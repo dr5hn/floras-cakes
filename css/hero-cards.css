@@ -1,0 +1,53 @@
+/* Hero Card Styles with Hover Effects */
+
+.hero-card {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    height: 300px;
+    cursor: pointer;
+}
+
+.hero-card-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+/* Zoom effect on hover */
+.hero-card:hover .hero-card-img {
+    transform: scale(1.1);
+}
+
+/* Improved gradient overlay for better text visibility */
+.hero-card .card-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(to top, rgba(0,0,0,0.85) 0%, rgba(0,0,0,0.5) 60%, transparent 100%);
+    padding: 30px 20px 20px;
+    color: white;
+    transition: background 0.3s ease;
+}
+
+/* Darken overlay more on hover for better text readability */
+.hero-card:hover .card-overlay {
+    background: linear-gradient(to top, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0.6) 60%, transparent 100%);
+}
+
+.hero-card .card-overlay h3 {
+    color: white;
+    margin-bottom: 5px;
+    font-size: 1.8em;
+    text-shadow: 2px 2px 8px rgba(0,0,0,0.8);
+}
+
+.hero-card .card-overlay p {
+    color: white;
+    margin: 0;
+    font-size: 0.95em;
+    text-shadow: 1px 1px 6px rgba(0,0,0,0.8);
+}
