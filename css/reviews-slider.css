@@ -1,0 +1,86 @@
+/* Reviews Slider Styles */
+
+.reviews-slider .owl-nav {
+    margin-top: 30px;
+}
+
+.reviews-slider .owl-nav button {
+    background: #d4145a !important;
+    color: white !important;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    font-size: 18px;
+    transition: all 0.3s ease;
+    margin: 0 8px;
+}
+
+.reviews-slider .owl-nav button:hover {
+    background: #a01045 !important;
+    transform: scale(1.1);
+}
+
+.reviews-slider .owl-nav button i {
+    line-height: 45px;
+}
+
+.reviews-slider .owl-dots {
+    text-align: center;
+    margin-top: 25px;
+}
+
+.reviews-slider .owl-dot {
+    width: 12px;
+    height: 12px;
+    background: #ddd !important;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 0 5px;
+    transition: all 0.3s ease;
+}
+
+.reviews-slider .owl-dot.active {
+    background: #d4145a !important;
+    width: 30px;
+    border-radius: 6px;
+}
+
+.reviews-slider .owl-dot:hover {
+    background: #f9d5e5 !important;
+}
+
+/* Review Card Hover Effect */
+.review-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.reviews-slider .item:hover .review-card {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.12) !important;
+}
+
+/* Custom styling for review stars animation */
+.review-stars i {
+    display: inline-block;
+    transition: transform 0.2s ease;
+}
+
+.review-card:hover .review-stars i {
+    animation: starBounce 0.5s ease;
+}
+
+@keyframes starBounce {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+}
+
+/* Stagger the star animation */
+.review-card:hover .review-stars i:nth-child(1) { animation-delay: 0s; }
+.review-card:hover .review-stars i:nth-child(2) { animation-delay: 0.1s; }
+.review-card:hover .review-stars i:nth-child(3) { animation-delay: 0.2s; }
+.review-card:hover .review-stars i:nth-child(4) { animation-delay: 0.3s; }
+.review-card:hover .review-stars i:nth-child(5) { animation-delay: 0.4s; }

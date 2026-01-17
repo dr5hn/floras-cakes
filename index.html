@@ -38,6 +38,8 @@
       <link href="css/smooth-scroll.css" rel="stylesheet">
       <!-- Hero Cards CSS -->
       <link href="css/hero-cards.css" rel="stylesheet">
+      <!-- Reviews Slider CSS -->
+      <link href="css/reviews-slider.css" rel="stylesheet">
 	        <!-- LayerSlider CSS -->
       <link rel="stylesheet" href="vendor/layerslider/css/layerslider.css">
       <!-- Prefix free -->
@@ -92,7 +94,6 @@
                      <div class="navbar-collapse collapse sidebar-navbar-collapse ">
                         <ul class="nav navbar-nav" id="sidenav01">
                            <li><a href="#top">Home</a></li>
-                           <li><a href="#about">About</a></li>
                            <li><a href="#gallery">Gallery</a></li>
                            <li><a href="#reviews">Reviews</a></li>
                         </ul>
@@ -128,7 +129,9 @@
          <!-- Hero Text -->
          <div class="col-md-12 text-center" style="margin-bottom: 50px;">
             <h1 style="margin-bottom: 20px;">Welcome to Flora's Cakes</h1>
-            <p class="lead" style="font-size: 1.3em; max-width: 800px; margin: 0 auto 30px;">Delicious homemade cakes crafted with love in Mumbai</p>
+            <p class="lead" style="font-size: 1.3em; max-width: 900px; margin: 0 auto 20px;">Made with Love</p>
+            <p style="font-size: 1.1em; max-width: 850px; margin: 0 auto 15px; color: #555; line-height: 1.8;">We specialize in creating delicious homemade cakes for all your special occasions. Based in Borivali West, Mumbai, we take pride in baking fresh cakes made with the finest ingredients.</p>
+            <p style="font-size: 1em; max-width: 850px; margin: 0 auto 30px; color: #666; line-height: 1.7;">From birthday celebrations to weddings and special events, each cake is crafted with attention to detail and love. Our custom designs and flavors are tailored to make your celebration memorable.</p>
             <a class="btn btn-primary btn-lg" href="#gallery" style="padding: 15px 40px; font-size: 16px;">View Our Gallery</a>
          </div>
 
@@ -196,25 +199,6 @@
    </div>
 </section>
 <!-- /hero-grid -->
-
-<!-- About Section -->
-<section id="about" class="inside-page" style="padding: 60px 0;">
-   <div class="container">
-      <div class="row">
-         <div class="col-md-12">
-            <h2 class="text-center" style="margin-bottom: 30px;">Made with Love</h2>
-         </div>
-         <div class="col-md-8">
-            <p class="lead" style="margin-bottom: 20px;">We specialize in creating delicious homemade cakes for all your special occasions.</p>
-            <p>Based in Borivali West, Mumbai, we take pride in baking fresh cakes made with the finest ingredients. From birthday celebrations to weddings and special events, each cake is crafted with attention to detail and love. Our custom designs and flavors are tailored to make your celebration memorable.</p>
-         </div>
-         <div class="col-md-4">
-            <img class="img-responsive img-rounded" src="img/services/services-home.jpg" alt="Flora's Cakes" style="border-radius: 10px;">
-         </div>
-      </div>
-   </div>
-</section>
-<!-- /about -->
 
 <!-- Gallery Section -->
 <section id="gallery" class="inside-page">
@@ -348,56 +332,96 @@
       </div>
 
       <div class="row">
-         <!-- Review Card 1 -->
-         <div class="col-md-4 col-sm-6" style="margin-bottom: 30px;">
-            <div class="review-card" style="background: white; padding: 30px; border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.08); height: 100%;">
-               <div class="review-stars" style="color: #f39c12; margin-bottom: 15px; font-size: 18px;">
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
+         <div class="col-md-12">
+            <div class="owl-carousel owl-theme reviews-slider" id="reviews-carousel">
+               <!-- Review Card 1 -->
+               <div class="item">
+                  <div class="review-card" style="background: white; padding: 40px; border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.08); margin: 10px; min-height: 280px;">
+                     <div class="review-stars" style="color: #f39c12; margin-bottom: 20px; font-size: 20px; text-align: center;">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                     </div>
+                     <p style="font-style: italic; margin-bottom: 25px; color: #555; line-height: 1.8; text-align: center; font-size: 15px;">"Flora's Cakes made my daughter's birthday so special! The unicorn cake was exactly what she wanted. Beautiful design and delicious taste!"</p>
+                     <div class="review-author" style="border-top: 1px solid #eee; padding-top: 20px; text-align: center;">
+                        <h5 style="margin: 0; color: #333; font-size: 17px; font-weight: 600;">Priya Sharma</h5>
+                        <p style="margin: 8px 0 0; color: #888; font-size: 14px;">Borivali West</p>
+                     </div>
+                  </div>
                </div>
-               <p style="font-style: italic; margin-bottom: 20px; color: #555; line-height: 1.8;">"Flora's Cakes made my daughter's birthday so special! The unicorn cake was exactly what she wanted. Beautiful design and delicious taste!"</p>
-               <div class="review-author" style="border-top: 1px solid #eee; padding-top: 15px;">
-                  <h5 style="margin: 0; color: #333; font-size: 16px;">Priya Sharma</h5>
-                  <p style="margin: 5px 0 0; color: #888; font-size: 13px;">Borivali West</p>
-               </div>
-            </div>
-         </div>
 
-         <!-- Review Card 2 -->
-         <div class="col-md-4 col-sm-6" style="margin-bottom: 30px;">
-            <div class="review-card" style="background: white; padding: 30px; border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.08); height: 100%;">
-               <div class="review-stars" style="color: #f39c12; margin-bottom: 15px; font-size: 18px;">
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
+               <!-- Review Card 2 -->
+               <div class="item">
+                  <div class="review-card" style="background: white; padding: 40px; border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.08); margin: 10px; min-height: 280px;">
+                     <div class="review-stars" style="color: #f39c12; margin-bottom: 20px; font-size: 20px; text-align: center;">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                     </div>
+                     <p style="font-style: italic; margin-bottom: 25px; color: #555; line-height: 1.8; text-align: center; font-size: 15px;">"Ordered a chocolate truffle cake for our anniversary. The quality and taste were outstanding. Highly recommend Flora's Cakes!"</p>
+                     <div class="review-author" style="border-top: 1px solid #eee; padding-top: 20px; text-align: center;">
+                        <h5 style="margin: 0; color: #333; font-size: 17px; font-weight: 600;">Rajesh Patel</h5>
+                        <p style="margin: 8px 0 0; color: #888; font-size: 14px;">Kandivali</p>
+                     </div>
+                  </div>
                </div>
-               <p style="font-style: italic; margin-bottom: 20px; color: #555; line-height: 1.8;">"Ordered a chocolate truffle cake for our anniversary. The quality and taste were outstanding. Highly recommend Flora's Cakes!"</p>
-               <div class="review-author" style="border-top: 1px solid #eee; padding-top: 15px;">
-                  <h5 style="margin: 0; color: #333; font-size: 16px;">Rajesh Patel</h5>
-                  <p style="margin: 5px 0 0; color: #888; font-size: 13px;">Kandivali</p>
-               </div>
-            </div>
-         </div>
 
-         <!-- Review Card 3 -->
-         <div class="col-md-4 col-sm-6" style="margin-bottom: 30px;">
-            <div class="review-card" style="background: white; padding: 30px; border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.08); height: 100%;">
-               <div class="review-stars" style="color: #f39c12; margin-bottom: 15px; font-size: 18px;">
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
+               <!-- Review Card 3 -->
+               <div class="item">
+                  <div class="review-card" style="background: white; padding: 40px; border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.08); margin: 10px; min-height: 280px;">
+                     <div class="review-stars" style="color: #f39c12; margin-bottom: 20px; font-size: 20px; text-align: center;">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                     </div>
+                     <p style="font-style: italic; margin-bottom: 25px; color: #555; line-height: 1.8; text-align: center; font-size: 15px;">"Best homemade cakes in Mumbai! Fresh ingredients, beautiful presentation, and prompt delivery. Flora's is now my go-to for all celebrations."</p>
+                     <div class="review-author" style="border-top: 1px solid #eee; padding-top: 20px; text-align: center;">
+                        <h5 style="margin: 0; color: #333; font-size: 17px; font-weight: 600;">Sneha Desai</h5>
+                        <p style="margin: 8px 0 0; color: #888; font-size: 14px;">Malad West</p>
+                     </div>
+                  </div>
                </div>
-               <p style="font-style: italic; margin-bottom: 20px; color: #555; line-height: 1.8;">"Best homemade cakes in Mumbai! Fresh ingredients, beautiful presentation, and prompt delivery. Flora's is now my go-to for all celebrations."</p>
-               <div class="review-author" style="border-top: 1px solid #eee; padding-top: 15px;">
-                  <h5 style="margin: 0; color: #333; font-size: 16px;">Sneha Desai</h5>
-                  <p style="margin: 5px 0 0; color: #888; font-size: 13px;">Malad West</p>
+
+               <!-- Review Card 4 -->
+               <div class="item">
+                  <div class="review-card" style="background: white; padding: 40px; border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.08); margin: 10px; min-height: 280px;">
+                     <div class="review-stars" style="color: #f39c12; margin-bottom: 20px; font-size: 20px; text-align: center;">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                     </div>
+                     <p style="font-style: italic; margin-bottom: 25px; color: #555; line-height: 1.8; text-align: center; font-size: 15px;">"Amazing wedding cake that exceeded all our expectations! Flora made our special day even more memorable. Thank you for the beautiful creation!"</p>
+                     <div class="review-author" style="border-top: 1px solid #eee; padding-top: 20px; text-align: center;">
+                        <h5 style="margin: 0; color: #333; font-size: 17px; font-weight: 600;">Amit & Kavita Mehta</h5>
+                        <p style="margin: 8px 0 0; color: #888; font-size: 14px;">Goregaon</p>
+                     </div>
+                  </div>
+               </div>
+
+               <!-- Review Card 5 -->
+               <div class="item">
+                  <div class="review-card" style="background: white; padding: 40px; border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.08); margin: 10px; min-height: 280px;">
+                     <div class="review-stars" style="color: #f39c12; margin-bottom: 20px; font-size: 20px; text-align: center;">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                     </div>
+                     <p style="font-style: italic; margin-bottom: 25px; color: #555; line-height: 1.8; text-align: center; font-size: 15px;">"The cupcakes were a hit at my office party! Everyone kept asking where I got them from. Will definitely order again for future events."</p>
+                     <div class="review-author" style="border-top: 1px solid #eee; padding-top: 20px; text-align: center;">
+                        <h5 style="margin: 0; color: #333; font-size: 17px; font-weight: 600;">Neha Kapoor</h5>
+                        <p style="margin: 8px 0 0; color: #888; font-size: 14px;">Andheri West</p>
+                     </div>
+                  </div>
                </div>
             </div>
          </div>
@@ -463,6 +487,33 @@
 <script src="switcher/js/bootstrap-select.js"></script>
 <!-- All Scripts & Plugins -->
 <script src="switcher/js/dmss.js"></script>
+<!-- Reviews Carousel Initialization -->
+<script>
+$(document).ready(function(){
+   $("#reviews-carousel").owlCarousel({
+      items: 3,
+      loop: true,
+      margin: 20,
+      autoplay: true,
+      autoplayTimeout: 5000,
+      autoplayHoverPause: true,
+      nav: true,
+      navText: ['<i class="fa fa-chevron-left"></i>', '<i class="fa fa-chevron-right"></i>'],
+      dots: true,
+      responsive: {
+         0: {
+            items: 1
+         },
+         768: {
+            items: 2
+         },
+         992: {
+            items: 3
+         }
+      }
+   });
+});
+</script>
 </body>
 
 <!-- Mirrored from ingridkuhn.com/themes/cakeandbake_html/ by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 17 Jan 2026 08:37:52 GMT -->
