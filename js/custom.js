@@ -27,10 +27,12 @@ Version: 1.0
 		$('#sidenav01 a[href^="#"]').on('click', function (event) {
 			event.preventDefault();
 			var target = $(this).attr('href');
+			var $scrollContainer = $('.content-wrapper');
 			if (target === '#top') {
-				$('html, body').animate({ scrollTop: 0 }, 800);
+				$scrollContainer.animate({ scrollTop: 0 }, 400);
 			} else if ($(target).length) {
-				$('html, body').animate({ scrollTop: $(target).offset().top }, 800);
+				var targetOffset = $(target).offset().top - $scrollContainer.offset().top + $scrollContainer.scrollTop();
+				$scrollContainer.animate({ scrollTop: targetOffset }, 400);
 			}
 		});
 

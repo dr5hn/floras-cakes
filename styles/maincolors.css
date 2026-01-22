@@ -14,8 +14,12 @@
  a, figure.team-style3 i, .nav.nav-tabs > li:focus > a, .btn,.btn-default,.testimonial .content:before {
      color:#eb810a;
 }
- .progress-bar-warning,#elements h3.sub-header, .social-media i:hover,.navbar-toggle,.back-to-top i:hover,.navbar-nav>li>.dropdown-menu, .btn.btn-secondary:hover,.btn.btn-secondary:focus, .navbar-default .navbar-nav>li:hover, .btn-primary:active,.btn-primary:not(:disabled):not(.disabled):active,.btn-primary.focus, .btn-primary:focus,.btn-default.focus, .btn-default:focus,.btn,.btn-default, .nav.nav-tabs li:nth-child(odd), .pager li>a, .pager li>span,.blog-tags a,.nav-pills>li>a ,.owl-prev i, .owl-next i,.owl-theme .owl-dots .owl-dot span:hover:before , .owl-theme .owl-dots .owl-dot.active span:before{
+ .progress-bar-warning,#elements h3.sub-header, .social-media i:hover,.navbar-toggle,.back-to-top i:hover,.navbar-nav>li>.dropdown-menu, .btn.btn-secondary:hover,.btn.btn-secondary:focus, .btn-primary:active,.btn-primary:not(:disabled):not(.disabled):active,.btn-primary.focus, .btn-primary:focus,.btn-default.focus, .btn-default:focus,.btn,.btn-default, .nav.nav-tabs li:nth-child(odd), .pager li>a, .pager li>span,.blog-tags a,.nav-pills>li>a ,.owl-prev i, .owl-next i,.owl-theme .owl-dots .owl-dot span:hover:before , .owl-theme .owl-dots .owl-dot.active span:before{
      background-color:#eb810a ;
+}
+/* Sidebar nav hover - use purple instead of orange */
+ .navbar-default .navbar-nav>li:hover {
+     background-color: #8A44D6;
 }
  h3.title:after, .menu-item-name,.post-slide .post-bar, .btn,.btn-default, .form-control:focus,.btn-primary.focus, .btn-primary:focus{
      border-color:#eb810a;
