@@ -5,7 +5,7 @@
 }
 
 .reviews-slider .owl-nav button {
-    background: #d4145a !important;
+    background: #8A44D6 !important;
     color: white !important;
     width: 45px;
     height: 45px;
@@ -16,7 +16,7 @@
 }
 
 .reviews-slider .owl-nav button:hover {
-    background: #a01045 !important;
+    background: #6B2FAB !important;
     transform: scale(1.1);
 }
 
@@ -40,13 +40,13 @@
 }
 
 .reviews-slider .owl-dot.active {
-    background: #d4145a !important;
+    background: #8A44D6 !important;
     width: 30px;
     border-radius: 6px;
 }
 
 .reviews-slider .owl-dot:hover {
-    background: #f9d5e5 !important;
+    background: #d8c4f0 !important;
 }
 
 /* Review Card Hover Effect */
