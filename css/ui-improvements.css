@@ -520,14 +520,31 @@ footer .copy {
         font-size: 0.85em;
     }
 
-    /* Gallery mobile */
+    /* Gallery mobile - fix overlap */
     #gallery {
         padding: 50px 0;
+    }
+
+    #gallery-isotope {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    #gallery-isotope .isotope-item {
+        position: relative !important;
+        left: auto !important;
+        top: auto !important;
+        transform: none !important;
     }
 
     .gallery-thumb {
         margin-bottom: 15px;
         border-radius: 10px;
+    }
+
+    .gallery-thumb img {
+        width: 100%;
+        height: auto;
     }
 
     /* Reviews mobile */
