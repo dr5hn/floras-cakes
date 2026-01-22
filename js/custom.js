@@ -14,13 +14,24 @@ Version: 1.0
        $('ul a[href="' + this.location.pathname + '"]').parents('li').addClass('active');
 			
   
-		//Scrolling feature 
+		//Scrolling feature
 		$('.page-scroll a').on('click', function (event) {
 			var $anchor = $(this);
 			$('html, body').stop().animate({
 				scrollTop: $($anchor.attr('href')).offset().top
 			}, 1500, 'easeInOutExpo');
 			event.preventDefault();
+		});
+
+		// Sidebar navigation smooth scroll
+		$('#sidenav01 a[href^="#"]').on('click', function (event) {
+			event.preventDefault();
+			var target = $(this).attr('href');
+			if (target === '#top') {
+				$('html, body').animate({ scrollTop: 0 }, 800);
+			} else if ($(target).length) {
+				$('html, body').animate({ scrollTop: $(target).offset().top }, 800);
+			}
 		});
 
         //functions on window over than 1200px

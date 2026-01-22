@@ -1,0 +1,6 @@
+# robots.txt for Flora's Cakes
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://florascakes.com/sitemap.xml

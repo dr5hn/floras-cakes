@@ -30,7 +30,7 @@
    <meta property="og:title" content="Flora's Cakes - Homemade Cakes in Borivali West, Mumbai">
    <meta property="og:description"
       content="Order delicious homemade cakes for birthdays, weddings & special occasions. Custom designs, fresh ingredients, local delivery in Mumbai.">
-   <meta property="og:image" content="https://florascakes.com/img/logo-f.png">
+   <meta property="og:image" content="https://florascakes.com/img/og-image.png">
    <meta property="og:locale" content="en_IN">
    <meta property="og:site_name" content="Flora's Cakes">
 
@@ -40,13 +40,10 @@
    <meta property="twitter:title" content="Flora's Cakes - Homemade Cakes in Borivali West, Mumbai">
    <meta property="twitter:description"
       content="Order delicious homemade cakes for birthdays, weddings & special occasions. Custom designs, fresh ingredients, local delivery in Mumbai.">
-   <meta property="twitter:image" content="https://florascakes.com/img/logo-f.png">
+   <meta property="twitter:image" content="https://florascakes.com/img/og-image.png">
 
    <!-- Canonical URL -->
    <link rel="canonical" href="https://florascakes.com/">
-   <!--[if lt IE 9]>
-      <script src="js/respond.js"></script>
-      <![endif]-->
    <!-- Font files -->
    <link href="fonts/flaticon/flaticon.css" rel="stylesheet" type="text/css">
    <link href="fonts/fontawesome/fontawesome-all.min.css" rel="stylesheet" type="text/css">
@@ -73,6 +70,8 @@
    <link href="css/hero-cards.css" rel="stylesheet">
    <!-- Reviews Slider CSS -->
    <link href="css/reviews-slider.css" rel="stylesheet">
+   <!-- UI Improvements CSS -->
+   <link href="css/ui-improvements.css" rel="stylesheet">
    <!-- Prefix free -->
    <script src="js/prefixfree.min.js"></script>
 
@@ -156,6 +155,50 @@
             "Borivali East",
             "Kandivali",
             "Malad",
+            "Goregaon",
+            "Andheri"
+         ]
+      }
+      </script>
+
+      <!-- FAQ Schema for SEO -->
+      <script type="application/ld+json">
+      {
+         "@context": "https://schema.org",
+         "@type": "FAQPage",
+         "mainEntity": [
+            {
+               "@type": "Question",
+               "name": "Do you deliver cakes in Borivali?",
+               "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Yes, we deliver fresh homemade cakes throughout Borivali West, Borivali East, Kandivali, Malad, Goregaon, and Andheri areas in Mumbai."
+               }
+            },
+            {
+               "@type": "Question",
+               "name": "Do you make eggless cakes?",
+               "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Yes, we specialize in eggless cakes including pure Jain cakes made with sattvic ingredients. All our cakes can be made eggless on request."
+               }
+            },
+            {
+               "@type": "Question",
+               "name": "How do I order a custom cake?",
+               "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "You can order a custom cake by calling us at +91 8433657212 or messaging us on WhatsApp. We recommend ordering at least 2-3 days in advance for custom designs."
+               }
+            },
+            {
+               "@type": "Question",
+               "name": "What types of cakes do you make?",
+               "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "We make birthday cakes, wedding cakes, anniversary cakes, themed cakes, cupcakes, cake popsicles, and custom designer cakes for all occasions."
+               }
+            }
          ]
       }
       </script>
@@ -211,7 +254,7 @@
             <!--/sidebar-nav -->
             <div class="navbar-info hidden-sm hidden-xs hidden-md">
                <p><i class="fas fa-map-marker-alt margin-icon"></i>Shimpoli Road, Borivali West</p>
-               <p><i class="fas fa-phone margin-icon"></i>+91 8433657212</p>
+               <p><i class="fas fa-phone margin-icon"></i><a href="tel:+918433657212" style="color: inherit;">+91 8433657212</a></p>
                <p><i class="far fa-clock margin-icon"></i>Daily: 9am-7pm</p>
                <!--Social icons -->
                <!-- <div class="social-media ">
@@ -228,99 +271,77 @@
       <div id="content" class="col-md-10 split">
          <div class="content-wrapper">
             <!-- Hero Grid Section -->
-            <section id="hero-grid"
-               style="padding: 80px 0 60px; background: linear-gradient(to bottom, #fff 0%, #fdf8f3 100%);">
+            <section id="hero-grid">
                <div class="container">
-                  <div class="row">
-                     <!-- Hero Text -->
-                     <div class="col-md-12 text-center" style="margin-bottom: 50px;">
-                        <h1 style="margin-bottom: 20px;">Welcome to Flora's Cakes</h1>
-                        <p class="lead" style="font-size: 1.3em; max-width: 900px; margin: 0 auto 20px;">Homemade with
-                           Love</p>
-                        <p
-                           style="font-size: 1.1em; max-width: 850px; margin: 0 auto 15px; color: #555; line-height: 1.8;">
-                           We specialize in creating delicious homemade cakes for all your special occasions. Based in
-                           Borivali West, Mumbai, we take pride in baking fresh cakes made with the finest ingredients.
-                        </p>
-                        <p
-                           style="font-size: 1em; max-width: 850px; margin: 0 auto 30px; color: #666; line-height: 1.7;">
-                           From birthday celebrations to weddings and special events, each cake is crafted with
-                           attention to detail and love. Our custom designs and flavors are tailored to make your
-                           celebration memorable.</p>
-                        <a class="btn btn-primary btn-lg" href="#gallery"
-                           style="padding: 15px 40px; font-size: 16px;">View Our Gallery</a>
-                     </div>
+                  <!-- Hero Header -->
+                  <div class="hero-header">
+                     <h1>Flora's Cakes</h1>
+                     <p class="hero-tagline">Homemade with Love</p>
+                     <p class="hero-description">
+                        Delicious custom cakes for birthdays, weddings, and special celebrations.
+                        Fresh ingredients, beautiful designs, crafted in Borivali West, Mumbai.
+                     </p>
+                     <a class="btn btn-primary hero-cta" href="#gallery">View Our Creations</a>
+                  </div>
 
-                     <!-- Service Cards with Image Background -->
-                     <div class="col-md-4 col-sm-6" style="margin-bottom: 30px;">
-                        <div class="hero-card"
-                           style="position: relative; overflow: hidden; border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); height: 300px;">
-                           <img src="img/gallery/cake8.jpg" alt="Birthday Cakes" class="img-responsive hero-card-img"
-                              style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s ease;">
+                  <!-- Service Cards -->
+                  <div class="row">
+                     <div class="col-md-4 col-sm-6 hero-card-wrapper">
+                        <div class="hero-card">
+                           <img src="img/gallery/cake8.jpg" alt="Birthday Cakes" class="hero-card-img">
                            <div class="card-overlay">
                               <h3>Birthday Cakes</h3>
-                              <p>Customized cakes for all ages, making celebrations extra special</p>
+                              <p>Customized cakes for all ages</p>
                            </div>
                         </div>
                      </div>
 
-                     <div class="col-md-4 col-sm-6" style="margin-bottom: 30px;">
-                        <div class="hero-card"
-                           style="position: relative; overflow: hidden; border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); height: 300px;">
-                           <img src="img/gallery/cake4.jpg" alt="Special Cakes" class="img-responsive hero-card-img"
-                              style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s ease;">
+                     <div class="col-md-4 col-sm-6 hero-card-wrapper">
+                        <div class="hero-card">
+                           <img src="img/gallery/cake4.jpg" alt="Special Cakes" class="hero-card-img">
                            <div class="card-overlay">
                               <h3>Special Cakes</h3>
-                              <p>Elegant cakes for weddings, anniversaries and celebrations</p>
+                              <p>Elegant designs for celebrations</p>
                            </div>
                         </div>
                      </div>
 
-                     <div class="col-md-4 col-sm-6" style="margin-bottom: 30px;">
-                        <div class="hero-card"
-                           style="position: relative; overflow: hidden; border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); height: 300px;">
-                           <img src="img/gallery/cake30.jpg" alt="Cupcakes & Sweets"
-                              class="img-responsive hero-card-img"
-                              style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s ease;">
+                     <div class="col-md-4 col-sm-6 hero-card-wrapper">
+                        <div class="hero-card">
+                           <img src="img/gallery/cake30.jpg" alt="Cupcakes" class="hero-card-img">
                            <div class="card-overlay">
-                              <h3>Cupcakes & Sweets</h3>
-                              <p>Delicious treats perfect for any gathering</p>
+                              <h3>Cupcakes</h3>
+                              <p>Perfect treats for any gathering</p>
                            </div>
                         </div>
                      </div>
 
-                     <div class="col-md-4 col-sm-6" style="margin-bottom: 30px;">
-                        <div class="hero-card"
-                           style="position: relative; overflow: hidden; border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); height: 300px;">
-                           <img src="img/gallery/cake31.jpg" alt="Themed Cakes" class="img-responsive hero-card-img"
-                              style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s ease;">
+                     <div class="col-md-4 col-sm-6 hero-card-wrapper">
+                        <div class="hero-card">
+                           <img src="img/gallery/cake31.jpg" alt="Themed Cakes" class="hero-card-img">
                            <div class="card-overlay">
                               <h3>Themed Cakes</h3>
-                              <p>Creative designs matching your event's unique style</p>
+                              <p>Creative designs for your event</p>
                            </div>
                         </div>
                      </div>
 
-                     <div class="col-md-4 col-sm-6" style="margin-bottom: 30px;">
-                        <div class="hero-card"
-                           style="position: relative; overflow: hidden; border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); height: 300px;">
-                           <img src="img/gallery/cake19.jpg" alt="Custom Orders" class="img-responsive hero-card-img"
-                              style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s ease;">
+                     <div class="col-md-4 col-sm-6 hero-card-wrapper">
+                        <div class="hero-card">
+                           <img src="img/gallery/cake19.jpg" alt="Jain Cakes" class="hero-card-img">
                            <div class="card-overlay">
                               <h3>Jain Cakes</h3>
-                              <p>Purely eggless and sattvic ingredients, crafted with respect for your lifestyle.</p>
+                              <p>Eggless & sattvic ingredients</p>
                            </div>
                         </div>
                      </div>
 
-                     <div class="col-md-4 col-sm-6" style="margin-bottom: 30px;">
-                        <div class="hero-card"
-                           style="position: relative; overflow: hidden; border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); height: 300px;">
-                           <img src="img/gallery/cake30.jpg" alt="Cake Popsicles" class="img-responsive hero-card-img"
-                              style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s ease;">
+                     <div class="col-md-4 col-sm-6 hero-card-wrapper">
+                        <div class="hero-card">
+                           <img src="img/gallery/cake30.jpg" alt="Cake Popsicles" class="hero-card-img">
                            <div class="card-overlay">
                               <h3>Cake Popsicles</h3>
-                              <p>Fun bite-sized treats on a stick, perfect for parties and gifts</p>
+                              <p>Fun bite-sized treats on a stick</p>
                            </div>
                         </div>
                      </div>
@@ -332,8 +353,10 @@
             <!-- Gallery Section -->
             <section id="gallery" class="inside-page">
                <div class="inside-wrapper container">
-                  <!-- <h2 class="text-center">Our Cake Gallery</h2>
-      <p class="text-center">Browse through our collection of beautiful cakes created for various occasions</p> -->
+                  <div class="section-header text-center" style="margin-bottom: 40px;">
+                  <h2 style="margin-bottom: 15px;">Custom Cakes in Mumbai</h2>
+                  <p class="lead">Browse our collection of 100% vegetarian birthday cakes, wedding cakes, Jain cakes & more</p>
+               </div>
 
                   <!-- Gallery filters -->
                   <!-- <ul class="nav nav-pills cat margin1 text-center">
@@ -350,7 +373,7 @@
                      <div class="special col-lg-4 col-sm-6 col-md-6">
                         <div class="isotope-item">
                            <div class="gallery-thumb">
-                              <img class="img-responsive" src="img/gallery/cake1.jpg"
+                              <img class="img-responsive" loading="lazy" src="img/gallery/cake1.jpg"
                                  alt="Custom special occasion cake by Flora's Cakes Mumbai">
                               <a href="img/gallery/cake1.jpg" title="Special Cake">
                                  <span class="overlay-mask"></span>
@@ -362,7 +385,7 @@
                      <div class="birthday col-lg-4 col-sm-6 col-md-6">
                         <div class="isotope-item">
                            <div class="gallery-thumb">
-                              <img class="img-responsive" src="img/gallery/cake2.png"
+                              <img class="img-responsive" loading="lazy" src="img/gallery/cake2.png"
                                  alt="Birthday cake design in Borivali West Mumbai">
                               <a href="img/gallery/cake2.png" title="Birthday Cake">
                                  <span class="overlay-mask"></span>
@@ -374,7 +397,7 @@
                      <div class="special col-lg-4 col-sm-6 col-md-6">
                         <div class="isotope-item">
                            <div class="gallery-thumb">
-                              <img class="img-responsive" src="img/gallery/cake4.jpg"
+                              <img class="img-responsive" loading="lazy" src="img/gallery/cake4.jpg"
                                  alt="Elegant special cake for celebrations Mumbai">
                               <a href="img/gallery/cake4.jpg" title="Special Cake">
                                  <span class="overlay-mask"></span>
@@ -386,7 +409,7 @@
                      <div class="birthday col-lg-4 col-sm-6 col-md-6">
                         <div class="isotope-item">
                            <div class="gallery-thumb">
-                              <img class="img-responsive" src="img/gallery/cake3.jpg"
+                              <img class="img-responsive" loading="lazy" src="img/gallery/cake3.jpg"
                                  alt="Custom birthday cake Borivali">
                               <a href="img/gallery/cake3.jpg" title="Birthday Cake">
                                  <span class="overlay-mask"></span>
@@ -399,7 +422,7 @@
                      <div class="special col-lg-4 col-sm-6 col-md-6">
                         <div class="isotope-item">
                            <div class="gallery-thumb">
-                              <img class="img-responsive" src="img/gallery/cake5.jpg"
+                              <img class="img-responsive" loading="lazy" src="img/gallery/cake5.jpg"
                                  alt="Designer special cake Mumbai delivery">
                               <a href="img/gallery/cake5.jpg" title="Cupcakes">
                                  <span class="overlay-mask"></span>
@@ -411,7 +434,7 @@
                      <div class="special col-lg-4 col-sm-6 col-md-6">
                         <div class="isotope-item">
                            <div class="gallery-thumb">
-                              <img class="img-responsive" src="img/gallery/cake6.jpg"
+                              <img class="img-responsive" loading="lazy" src="img/gallery/cake6.jpg"
                                  alt="Special occasion cake with local delivery Borivali">
                               <a href="img/gallery/cake6.jpg" title="Special Cake">
                                  <span class="overlay-mask"></span>
@@ -423,7 +446,7 @@
                      <div class="birthday col-lg-4 col-sm-6 col-md-6">
                         <div class="isotope-item">
                            <div class="gallery-thumb">
-                              <img class="img-responsive" src="img/gallery/cake7.jpg"
+                              <img class="img-responsive" loading="lazy" src="img/gallery/cake7.jpg"
                                  alt="Kids birthday cake design Mumbai">
                               <a href="img/gallery/cake7.jpg" title="Birthday Cake">
                                  <span class="overlay-mask"></span>
@@ -435,7 +458,7 @@
                      <div class="birthday col-lg-4 col-sm-6 col-md-6">
                         <div class="isotope-item">
                            <div class="gallery-thumb">
-                              <img class="img-responsive" src="img/gallery/cake8.jpg"
+                              <img class="img-responsive" loading="lazy" src="img/gallery/cake8.jpg"
                                  alt="Birthday celebration cake Borivali West">
                               <a href="img/gallery/cake8.jpg" title="Cupcakes">
                                  <span class="overlay-mask"></span>
@@ -447,7 +470,7 @@
                      <div class="special col-lg-4 col-sm-6 col-md-6">
                         <div class="isotope-item">
                            <div class="gallery-thumb">
-                              <img class="img-responsive" src="img/gallery/cake9.jpg"
+                              <img class="img-responsive" loading="lazy" src="img/gallery/cake9.jpg"
                                  alt="Elegant wedding anniversary cake Mumbai">
                               <a href="img/gallery/cake9.jpg" title="Special Cake">
                                  <span class="overlay-mask"></span>
@@ -459,7 +482,7 @@
                      <div class="birthday col-lg-4 col-sm-6 col-md-6">
                         <div class="isotope-item">
                            <div class="gallery-thumb">
-                              <img class="img-responsive" src="img/gallery/cake10.jpg"
+                              <img class="img-responsive" loading="lazy" src="img/gallery/cake10.jpg"
                                  alt="Themed birthday cake Borivali">
                               <a href="img/gallery/cake10.jpg" title="Birthday Cake">
                                  <span class="overlay-mask"></span>
@@ -471,7 +494,7 @@
                      <div class="birthday col-lg-4 col-sm-6 col-md-6">
                         <div class="isotope-item">
                            <div class="gallery-thumb">
-                              <img class="img-responsive" src="img/gallery/cake11.jpg"
+                              <img class="img-responsive" loading="lazy" src="img/gallery/cake11.jpg"
                                  alt="Custom birthday cake design Mumbai">
                               <a href="img/gallery/cake11.jpg" title="Birthday Cake">
                                  <span class="overlay-mask"></span>
@@ -483,7 +506,7 @@
                      <div class="jaincakes col-lg-4 col-sm-6 col-md-6">
                         <div class="isotope-item">
                            <div class="gallery-thumb">
-                              <img class="img-responsive" src="img/gallery/cake12.png"
+                              <img class="img-responsive" loading="lazy" src="img/gallery/cake12.png"
                                  alt="Eggless Jain cake Borivali Mumbai">
                               <a href="img/gallery/cake12.png" title="Cupcakes">
                                  <span class="overlay-mask"></span>
@@ -495,7 +518,7 @@
                      <div class="jaincakes col-lg-4 col-sm-6 col-md-6">
                         <div class="isotope-item">
                            <div class="gallery-thumb">
-                              <img class="img-responsive" src="img/gallery/cake13.jpg"
+                              <img class="img-responsive" loading="lazy" src="img/gallery/cake13.jpg"
                                  alt="Eggless vegetarian cake Mumbai">
                               <a href="img/gallery/cake13.jpg" title="Cupcakes">
                                  <span class="overlay-mask"></span>
@@ -507,7 +530,7 @@
                      <div class="birthday col-lg-4 col-sm-6 col-md-6">
                         <div class="isotope-item">
                            <div class="gallery-thumb">
-                              <img class="img-responsive" src="img/gallery/cake14.jpg"
+                              <img class="img-responsive" loading="lazy" src="img/gallery/cake14.jpg"
                                  alt="Birthday party cake Kandivali Mumbai">
                               <a href="img/gallery/cake14.jpg" title="Birthday Cake">
                                  <span class="overlay-mask"></span>
@@ -519,7 +542,7 @@
                      <div class="birthday col-lg-4 col-sm-6 col-md-6">
                         <div class="isotope-item">
                            <div class="gallery-thumb">
-                              <img class="img-responsive" src="img/gallery/cake15.jpg"
+                              <img class="img-responsive" loading="lazy" src="img/gallery/cake15.jpg"
                                  alt="Kids birthday cake Borivali West">
                               <a href="img/gallery/cake15.jpg" title="Birthday Cake">
                                  <span class="overlay-mask"></span>
@@ -531,7 +554,7 @@
                      <div class="birthday col-lg-4 col-sm-6 col-md-6">
                         <div class="isotope-item">
                            <div class="gallery-thumb">
-                              <img class="img-responsive" src="img/gallery/cake16.png"
+                              <img class="img-responsive" loading="lazy" src="img/gallery/cake16.png"
                                  alt="Custom birthday cake order Mumbai">
                               <a href="img/gallery/cake16.png" title="Birthday Cake">
                                  <span class="overlay-mask"></span>
@@ -543,7 +566,7 @@
                      <div class="special col-lg-4 col-sm-6 col-md-6">
                         <div class="isotope-item">
                            <div class="gallery-thumb">
-                              <img class="img-responsive" src="img/gallery/cake17.jpg"
+                              <img class="img-responsive" loading="lazy" src="img/gallery/cake17.jpg"
                                  alt="Designer special cake Borivali">
                               <a href="img/gallery/cake17.jpg" title="Special Cake">
                                  <span class="overlay-mask"></span>
@@ -555,7 +578,7 @@
                      <div class="special col-lg-4 col-sm-6 col-md-6">
                         <div class="isotope-item">
                            <div class="gallery-thumb">
-                              <img class="img-responsive" src="img/gallery/cake18.jpg"
+                              <img class="img-responsive" loading="lazy" src="img/gallery/cake18.jpg"
                                  alt="Celebration cake with delivery Mumbai">
                               <a href="img/gallery/cake18.jpg" title="Special Cake">
                                  <span class="overlay-mask"></span>
@@ -567,7 +590,7 @@
                      <div class="jaincakes col-lg-4 col-sm-6 col-md-6">
                         <div class="isotope-item">
                            <div class="gallery-thumb">
-                              <img class="img-responsive" src="img/gallery/cake19.jpg"
+                              <img class="img-responsive" loading="lazy" src="img/gallery/cake19.jpg"
                                  alt="Eggless Jain birthday cake Mumbai">
                               <a href="img/gallery/cake19.jpg" title="Special Cake">
                                  <span class="overlay-mask"></span>
@@ -579,7 +602,7 @@
                      <div class="special col-lg-4 col-sm-6 col-md-6">
                         <div class="isotope-item">
                            <div class="gallery-thumb">
-                              <img class="img-responsive" src="img/gallery/cake20.jpg"
+                              <img class="img-responsive" loading="lazy" src="img/gallery/cake20.jpg"
                                  alt="Anniversary special cake Borivali West">
                               <a href="img/gallery/cake20.jpg" title="Special Cake">
                                  <span class="overlay-mask"></span>
@@ -591,7 +614,7 @@
                      <div class="birthday col-lg-4 col-sm-6 col-md-6">
                         <div class="isotope-item">
                            <div class="gallery-thumb">
-                              <img class="img-responsive" src="img/gallery/cake21.jpg"
+                              <img class="img-responsive" loading="lazy" src="img/gallery/cake21.jpg"
                                  alt="Themed birthday cake Mumbai bakery">
                               <a href="img/gallery/cake21.jpg" title="Birthday Cake">
                                  <span class="overlay-mask"></span>
@@ -603,7 +626,7 @@
                      <div class="special col-lg-4 col-sm-6 col-md-6">
                         <div class="isotope-item">
                            <div class="gallery-thumb">
-                              <img class="img-responsive" src="img/gallery/cake22.jpg"
+                              <img class="img-responsive" loading="lazy" src="img/gallery/cake22.jpg"
                                  alt="Elegant wedding cake Borivali Mumbai">
                               <a href="img/gallery/cake22.jpg" title="Special Cake">
                                  <span class="overlay-mask"></span>
@@ -615,7 +638,7 @@
                      <div class="birthday col-lg-4 col-sm-6 col-md-6">
                         <div class="isotope-item">
                            <div class="gallery-thumb">
-                              <img class="img-responsive" src="img/gallery/cake23.jpg"
+                              <img class="img-responsive" loading="lazy" src="img/gallery/cake23.jpg"
                                  alt="Custom birthday cake Malad Mumbai">
                               <a href="img/gallery/cake23.jpg" title="Birthday Cake">
                                  <span class="overlay-mask"></span>
@@ -627,7 +650,7 @@
                      <div class="birthday col-lg-4 col-sm-6 col-md-6">
                         <div class="isotope-item">
                            <div class="gallery-thumb">
-                              <img class="img-responsive" src="img/gallery/cake24.jpg"
+                              <img class="img-responsive" loading="lazy" src="img/gallery/cake24.jpg"
                                  alt="Party birthday cake Goregaon Mumbai">
                               <a href="img/gallery/cake24.jpg" title="Birthday Cake">
                                  <span class="overlay-mask"></span>
@@ -639,7 +662,7 @@
                      <div class="special col-lg-4 col-sm-6 col-md-6">
                         <div class="isotope-item">
                            <div class="gallery-thumb">
-                              <img class="img-responsive" src="img/gallery/cake25.jpg"
+                              <img class="img-responsive" loading="lazy" src="img/gallery/cake25.jpg"
                                  alt="Special occasion cake Andheri Mumbai">
                               <a href="img/gallery/cake25.jpg" title="Special Cake">
                                  <span class="overlay-mask"></span>
@@ -651,7 +674,7 @@
                      <div class="special col-lg-4 col-sm-6 col-md-6">
                         <div class="isotope-item">
                            <div class="gallery-thumb">
-                              <img class="img-responsive" src="img/gallery/cake26.jpg"
+                              <img class="img-responsive" loading="lazy" src="img/gallery/cake26.jpg"
                                  alt="Designer celebration cake Borivali">
                               <a href="img/gallery/cake26.jpg" title="Special Cake">
                                  <span class="overlay-mask"></span>
@@ -663,7 +686,7 @@
                      <div class="jaincakes col-lg-4 col-sm-6 col-md-6">
                         <div class="isotope-item">
                            <div class="gallery-thumb">
-                              <img class="img-responsive" src="img/gallery/cake27.jpg"
+                              <img class="img-responsive" loading="lazy" src="img/gallery/cake27.jpg"
                                  alt="Pure vegetarian Jain cake Borivali West">
                               <a href="img/gallery/cake27.jpg" title="Birthday Cake">
                                  <span class="overlay-mask"></span>
@@ -675,7 +698,7 @@
                      <div class="special col-lg-4 col-sm-6 col-md-6">
                         <div class="isotope-item">
                            <div class="gallery-thumb">
-                              <img class="img-responsive" src="img/gallery/cake28.jpg"
+                              <img class="img-responsive" loading="lazy" src="img/gallery/cake28.jpg"
                                  alt="Homemade special cake Mumbai delivery">
                               <a href="img/gallery/cake28.jpg" title="Special Cake">
                                  <span class="overlay-mask"></span>
@@ -687,7 +710,7 @@
                      <div class="birthday col-lg-4 col-sm-6 col-md-6">
                         <div class="isotope-item">
                            <div class="gallery-thumb">
-                              <img class="img-responsive" src="img/gallery/cake29.jpg" alt="Custom birthday cake Kandivali delivery">
+                              <img class="img-responsive" loading="lazy" src="img/gallery/cake29.jpg" alt="Custom birthday cake Kandivali delivery">
                               <a href="img/gallery/cake29.jpg" title="Birthday Cake">
                                  <span class="overlay-mask"></span>
                               </a>
@@ -698,7 +721,7 @@
                      <div class="cupcakes col-lg-4 col-sm-6 col-md-6">
                         <div class="isotope-item">
                            <div class="gallery-thumb">
-                              <img class="img-responsive" src="img/gallery/cake30.jpg" alt="Homemade cupcakes Borivali West Mumbai">
+                              <img class="img-responsive" loading="lazy" src="img/gallery/cake30.jpg" alt="Homemade cupcakes Borivali West Mumbai">
                               <a href="img/gallery/cake30.jpg" title="Cupcakes">
                                  <span class="overlay-mask"></span>
                               </a>
@@ -709,7 +732,7 @@
                      <div class="special col-lg-4 col-sm-6 col-md-6">
                         <div class="isotope-item">
                            <div class="gallery-thumb">
-                              <img class="img-responsive" src="img/gallery/cake31.jpg" alt="Themed party cake Flora's Cakes Mumbai">
+                              <img class="img-responsive" loading="lazy" src="img/gallery/cake31.jpg" alt="Themed party cake Flora's Cakes Mumbai">
                               <a href="img/gallery/cake31.jpg" title="Special Cake">
                                  <span class="overlay-mask"></span>
                               </a>
@@ -720,7 +743,7 @@
                      <div class="birthday col-lg-4 col-sm-6 col-md-6">
                         <div class="isotope-item">
                            <div class="gallery-thumb">
-                              <img class="img-responsive" src="img/gallery/cake32.png" alt="Birthday celebration cake Borivali bakery">
+                              <img class="img-responsive" loading="lazy" src="img/gallery/cake32.png" alt="Birthday celebration cake Borivali bakery">
                               <a href="img/gallery/cake32.png" title="Birthday Cake">
                                  <span class="overlay-mask"></span>
                               </a>
@@ -731,7 +754,7 @@
                      <div class="special col-lg-4 col-sm-6 col-md-6">
                         <div class="isotope-item">
                            <div class="gallery-thumb">
-                              <img class="img-responsive" src="img/gallery/cake33.jpg" alt="Special event cake Mumbai home delivery">
+                              <img class="img-responsive" loading="lazy" src="img/gallery/cake33.jpg" alt="Special event cake Mumbai home delivery">
                               <a href="img/gallery/cake33.jpg" title="Special Cake">
                                  <span class="overlay-mask"></span>
                               </a>
@@ -742,7 +765,7 @@
                      <div class="special col-lg-4 col-sm-6 col-md-6">
                         <div class="isotope-item">
                            <div class="gallery-thumb">
-                              <img class="img-responsive" src="img/gallery/cake34.jpg" alt="Designer occasion cake Borivali West">
+                              <img class="img-responsive" loading="lazy" src="img/gallery/cake34.jpg" alt="Designer occasion cake Borivali West">
                               <a href="img/gallery/cake34.jpg" title="Special Cake">
                                  <span class="overlay-mask"></span>
                               </a>
@@ -753,7 +776,7 @@
                      <div class="birthday col-lg-4 col-sm-6 col-md-6">
                         <div class="isotope-item">
                            <div class="gallery-thumb">
-                              <img class="img-responsive" src="img/gallery/cake35.jpg" alt="Unique birthday cake design Mumbai">
+                              <img class="img-responsive" loading="lazy" src="img/gallery/cake35.jpg" alt="Unique birthday cake design Mumbai">
                               <a href="img/gallery/cake35.jpg" title="Birthday Cake">
                                  <span class="overlay-mask"></span>
                               </a>
@@ -764,7 +787,7 @@
                      <div class="birthday col-lg-4 col-sm-6 col-md-6">
                         <div class="isotope-item">
                            <div class="gallery-thumb">
-                              <img class="img-responsive" src="img/gallery/cake36.jpg" alt="Fresh homemade birthday cake Borivali">
+                              <img class="img-responsive" loading="lazy" src="img/gallery/cake36.jpg" alt="Fresh homemade birthday cake Borivali">
                               <a href="img/gallery/cake36.jpg" title="Birthday Cake">
                                  <span class="overlay-mask"></span>
                               </a>
@@ -778,14 +801,11 @@
             </section>
 
             <!-- Reviews Section -->
-            <section id="reviews" class="inside-page"
-               style="padding: 80px 0; background: linear-gradient(to bottom, #fdf8f3 0%, #fff 100%);">
+            <section id="reviews" class="inside-page">
                <div class="container">
-                  <div class="row">
-                     <div class="col-md-12 text-center" style="margin-bottom: 50px;">
-                        <h2 style="margin-bottom: 15px;">What Our Customers Say</h2>
-                        <p class="lead">Read reviews from our happy customers across Mumbai</p>
-                     </div>
+                  <div class="reviews-section-header">
+                     <h2>What Our Customers Say</h2>
+                     <p>Read reviews from our happy customers across Mumbai</p>
                   </div>
 
                   <div class="row">
@@ -793,125 +813,90 @@
                         <div class="owl-carousel owl-theme reviews-slider" id="reviews-carousel">
                            <!-- Review Card 1 -->
                            <div class="item">
-                              <div class="review-card"
-                                 style="background: white; padding: 40px; border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.08); margin: 10px; min-height: 280px;">
-                                 <div class="review-stars"
-                                    style="color: #f39c12; margin-bottom: 20px; font-size: 20px; text-align: center;">
+                              <div class="review-card">
+                                 <div class="review-stars">
                                     <i class="fas fa-star"></i>
                                     <i class="fas fa-star"></i>
                                     <i class="fas fa-star"></i>
                                     <i class="fas fa-star"></i>
                                     <i class="fas fa-star"></i>
                                  </div>
-                                 <p
-                                    style="font-style: italic; margin-bottom: 25px; color: #555; line-height: 1.8; text-align: center; font-size: 15px;">
-                                    "Flora's Cakes made my daughter's birthday so special! The unicorn cake was exactly
-                                    what she wanted. Beautiful design and delicious taste!"</p>
-                                 <div class="review-author"
-                                    style="border-top: 1px solid #eee; padding-top: 20px; text-align: center;">
-                                    <h5 style="margin: 0; color: #333; font-size: 17px; font-weight: 600;">Priya Sharma
-                                    </h5>
-                                    <p style="margin: 8px 0 0; color: #888; font-size: 14px;">Borivali West</p>
+                                 <p>"Flora's Cakes made my daughter's birthday so special! The unicorn cake was exactly what she wanted. Beautiful design and delicious taste!"</p>
+                                 <div class="review-author">
+                                    <h5>Priya Sharma</h5>
+                                    <p>Borivali West</p>
                                  </div>
                               </div>
                            </div>
 
                            <!-- Review Card 2 -->
                            <div class="item">
-                              <div class="review-card"
-                                 style="background: white; padding: 40px; border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.08); margin: 10px; min-height: 280px;">
-                                 <div class="review-stars"
-                                    style="color: #f39c12; margin-bottom: 20px; font-size: 20px; text-align: center;">
+                              <div class="review-card">
+                                 <div class="review-stars">
                                     <i class="fas fa-star"></i>
                                     <i class="fas fa-star"></i>
                                     <i class="fas fa-star"></i>
                                     <i class="fas fa-star"></i>
                                     <i class="fas fa-star"></i>
                                  </div>
-                                 <p
-                                    style="font-style: italic; margin-bottom: 25px; color: #555; line-height: 1.8; text-align: center; font-size: 15px;">
-                                    "Ordered a chocolate truffle cake for our anniversary. The quality and taste were
-                                    outstanding. Highly recommend Flora's Cakes!"</p>
-                                 <div class="review-author"
-                                    style="border-top: 1px solid #eee; padding-top: 20px; text-align: center;">
-                                    <h5 style="margin: 0; color: #333; font-size: 17px; font-weight: 600;">Rajesh Patel
-                                    </h5>
-                                    <p style="margin: 8px 0 0; color: #888; font-size: 14px;">Kandivali</p>
+                                 <p>"Ordered a chocolate truffle cake for our anniversary. The quality and taste were outstanding. Highly recommend Flora's Cakes!"</p>
+                                 <div class="review-author">
+                                    <h5>Rajesh Patel</h5>
+                                    <p>Kandivali</p>
                                  </div>
                               </div>
                            </div>
 
                            <!-- Review Card 3 -->
                            <div class="item">
-                              <div class="review-card"
-                                 style="background: white; padding: 40px; border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.08); margin: 10px; min-height: 280px;">
-                                 <div class="review-stars"
-                                    style="color: #f39c12; margin-bottom: 20px; font-size: 20px; text-align: center;">
+                              <div class="review-card">
+                                 <div class="review-stars">
                                     <i class="fas fa-star"></i>
                                     <i class="fas fa-star"></i>
                                     <i class="fas fa-star"></i>
                                     <i class="fas fa-star"></i>
                                     <i class="fas fa-star"></i>
                                  </div>
-                                 <p
-                                    style="font-style: italic; margin-bottom: 25px; color: #555; line-height: 1.8; text-align: center; font-size: 15px;">
-                                    "Best homemade cakes in Mumbai! Fresh ingredients, beautiful presentation, and
-                                    prompt delivery. Flora's is now my go-to for all celebrations."</p>
-                                 <div class="review-author"
-                                    style="border-top: 1px solid #eee; padding-top: 20px; text-align: center;">
-                                    <h5 style="margin: 0; color: #333; font-size: 17px; font-weight: 600;">Sneha Desai
-                                    </h5>
-                                    <p style="margin: 8px 0 0; color: #888; font-size: 14px;">Malad West</p>
+                                 <p>"Best homemade cakes in Mumbai! Fresh ingredients, beautiful presentation, and prompt delivery. Flora's is now my go-to for all celebrations."</p>
+                                 <div class="review-author">
+                                    <h5>Sneha Desai</h5>
+                                    <p>Malad West</p>
                                  </div>
                               </div>
                            </div>
 
                            <!-- Review Card 4 -->
                            <div class="item">
-                              <div class="review-card"
-                                 style="background: white; padding: 40px; border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.08); margin: 10px; min-height: 280px;">
-                                 <div class="review-stars"
-                                    style="color: #f39c12; margin-bottom: 20px; font-size: 20px; text-align: center;">
+                              <div class="review-card">
+                                 <div class="review-stars">
                                     <i class="fas fa-star"></i>
                                     <i class="fas fa-star"></i>
                                     <i class="fas fa-star"></i>
                                     <i class="fas fa-star"></i>
                                     <i class="fas fa-star"></i>
                                  </div>
-                                 <p
-                                    style="font-style: italic; margin-bottom: 25px; color: #555; line-height: 1.8; text-align: center; font-size: 15px;">
-                                    "Amazing wedding cake that exceeded all our expectations! Flora made our special day
-                                    even more memorable. Thank you for the beautiful creation!"</p>
-                                 <div class="review-author"
-                                    style="border-top: 1px solid #eee; padding-top: 20px; text-align: center;">
-                                    <h5 style="margin: 0; color: #333; font-size: 17px; font-weight: 600;">Amit & Kavita
-                                       Mehta</h5>
-                                    <p style="margin: 8px 0 0; color: #888; font-size: 14px;">Goregaon</p>
+                                 <p>"Amazing wedding cake that exceeded all our expectations! Flora made our special day even more memorable. Thank you for the beautiful creation!"</p>
+                                 <div class="review-author">
+                                    <h5>Amit & Kavita Mehta</h5>
+                                    <p>Goregaon</p>
                                  </div>
                               </div>
                            </div>
 
                            <!-- Review Card 5 -->
                            <div class="item">
-                              <div class="review-card"
-                                 style="background: white; padding: 40px; border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.08); margin: 10px; min-height: 280px;">
-                                 <div class="review-stars"
-                                    style="color: #f39c12; margin-bottom: 20px; font-size: 20px; text-align: center;">
+                              <div class="review-card">
+                                 <div class="review-stars">
                                     <i class="fas fa-star"></i>
                                     <i class="fas fa-star"></i>
                                     <i class="fas fa-star"></i>
                                     <i class="fas fa-star"></i>
                                     <i class="fas fa-star"></i>
                                  </div>
-                                 <p
-                                    style="font-style: italic; margin-bottom: 25px; color: #555; line-height: 1.8; text-align: center; font-size: 15px;">
-                                    "The cupcakes were a hit at my office party! Everyone kept asking where I got them
-                                    from. Will definitely order again for future events."</p>
-                                 <div class="review-author"
-                                    style="border-top: 1px solid #eee; padding-top: 20px; text-align: center;">
-                                    <h5 style="margin: 0; color: #333; font-size: 17px; font-weight: 600;">Neha Kapoor
-                                    </h5>
-                                    <p style="margin: 8px 0 0; color: #888; font-size: 14px;">Andheri West</p>
+                                 <p>"The cupcakes were a hit at my office party! Everyone kept asking where I got them from. Will definitely order again for future events."</p>
+                                 <div class="review-author">
+                                    <h5>Neha Kapoor</h5>
+                                    <p>Andheri West</p>
                                  </div>
                               </div>
                            </div>
@@ -937,7 +922,7 @@
                      <!-- Logo -->
                      <p><i class="fas fa-map-marker-alt margin-icon"></i>Shimpoli Road, Borivali West
                      </p>
-                     <p><i class="fas fa-phone margin-icon"></i><a href="tel:8433657212"
+                     <p><i class="fas fa-phone margin-icon"></i><a href="tel:+918433657212"
                            style="color: inherit;">+91 8433657212</a></p>
                      <p><i class="far fa-clock margin-icon"></i>Daily: 9am-7pm</p>
                      <!--Social icons -->
@@ -975,8 +960,6 @@
    <!-- Custom Js -->
    <script src="js/custom.js"></script>
    <script src="js/plugins.js"></script>
-   <!-- number counter script -->
-   <script src="js/counter.js"></script>
    <!-- Reviews Carousel Initialization -->
    <script>
       $(document).ready(function () {
@@ -1004,6 +987,92 @@
          });
       });
    </script>
+
+   <!-- Floating WhatsApp Button -->
+   <a href="https://wa.me/918433657212?text=Hi%20Flora's%20Cakes!%20I'm%20interested%20in%20ordering%20a%20cake."
+      class="whatsapp-float" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+      <i class="fab fa-whatsapp"></i>
+   </a>
+
+   <!-- Mobile Sticky CTA Bar -->
+   <div class="mobile-cta-bar">
+      <a href="tel:+918433657212" class="cta-call">
+         <i class="fas fa-phone"></i> Call Now
+      </a>
+      <a href="https://wa.me/918433657212?text=Hi%20Flora's%20Cakes!%20I'm%20interested%20in%20ordering%20a%20cake." class="cta-whatsapp" target="_blank" rel="noopener">
+         <i class="fab fa-whatsapp"></i> WhatsApp
+      </a>
+   </div>
+
+   <style>
+   /* Floating WhatsApp Button */
+   .whatsapp-float {
+      position: fixed;
+      bottom: 90px;
+      right: 20px;
+      width: 60px;
+      height: 60px;
+      background: #25D366;
+      color: white;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 32px;
+      box-shadow: 0 4px 15px rgba(37, 211, 102, 0.4);
+      z-index: 9999;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+   }
+   .whatsapp-float:hover {
+      transform: scale(1.1);
+      box-shadow: 0 6px 20px rgba(37, 211, 102, 0.6);
+      color: white;
+      text-decoration: none;
+   }
+
+   /* Mobile Sticky CTA Bar */
+   .mobile-cta-bar {
+      display: none;
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: white;
+      box-shadow: 0 -2px 10px rgba(0,0,0,0.1);
+      z-index: 9998;
+      padding: 10px;
+   }
+   .mobile-cta-bar a {
+      flex: 1;
+      padding: 12px 15px;
+      text-align: center;
+      border-radius: 8px;
+      font-weight: 600;
+      font-size: 14px;
+      text-decoration: none;
+      margin: 0 5px;
+   }
+   .mobile-cta-bar .cta-call {
+      background: #8A44D6;
+      color: white;
+   }
+   .mobile-cta-bar .cta-whatsapp {
+      background: #25D366;
+      color: white;
+   }
+
+   @media (max-width: 768px) {
+      .mobile-cta-bar {
+         display: flex;
+      }
+      .whatsapp-float {
+         bottom: 80px;
+      }
+      body {
+         padding-bottom: 70px;
+      }
+   }
+   </style>
 </body>
 
 </html>
