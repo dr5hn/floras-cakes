@@ -13,7 +13,7 @@ Last change: 11 March 2020
 	#Slider
 	#Structure
 	#Section - About us
-    #Section - Menu		
+    #Section - Menu
 	#Section - Gallery
 	#Section - Contact
 	#Section - Blog Pages
@@ -245,7 +245,6 @@ Last change: 11 March 2020
  .brand {
      margin-bottom: 0px;
      text-align: center;
-     max-width: 140px;
      margin: auto;
 }
 /* =========================== Slider ============================ */
@@ -530,10 +529,10 @@ Last change: 11 March 2020
 /* =========================== Gallery ============================ */
 /* Isotope */
  .isotope-item {
-     z-index: 2 
+     z-index: 2
 }
  .isotope-hidden.isotope-item {
-     z-index: 1 
+     z-index: 1
 }
  .isotope, .isotope .isotope-item {
      transition-duration: 0.8s;
@@ -1433,7 +1432,7 @@ Last change: 11 March 2020
 }
 /* Image border */
  .img-border {
-     border: 4px double 
+     border: 4px double
 }
 /* well */
  .well{
@@ -2039,4 +2038,3 @@ Last change: 11 March 2020
          width: 50%!important;
     }
 }
- 
